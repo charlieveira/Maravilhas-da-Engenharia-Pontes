@@ -1,0 +1,93 @@
+@media(min-width:1280px){
+    .conteudo-slide div.conteudo-texto{
+        width: 35vw;
+    }
+}
+@media(min-width:1030px){
+    .populr-post,
+    .tags,
+    .aLittleAbout{
+        width: 14vw;
+        height: 25vh;
+}
+    .get-in-toch{
+        width: 14vw;
+        height: 28vh;
+    
+
+}
+}
+@media(min-width:768px){
+    .conteudo-header-2 button.menuDropDown{
+        display: none;
+    } 
+        
+}
+@media(max-width:786px){
+    .conteudo-header-2 div.menu{
+        display: none;
+    }
+    div.menu div{
+        height: 40px;
+        margin-left: 5px;
+    }
+    div.menu div a{
+        border-bottom: 3px solid #cacaca;        
+    }
+    .menuDrop:hover div.menu{
+        position: absolute;
+        display: block;        
+        background-color: #ffffff;
+        border-radius: 5px;
+        border-right: 5px solid #cacaca;
+        width: 100px;
+        height: 245px;
+        z-index: 100;        
+    }    
+    .conteudo-slide .conteudo-texto h3{
+        font-size: 15px;        
+    }
+    .linkImacPencilPhoto{        
+        flex-wrap: wrap;
+    }  
+    .pencilWithPaper-content{
+        padding-top: 0;
+    }
+    .populr-post,
+    .tags,
+    .aLittleAbout{
+        width: 30vw;
+        height: 250px;
+}
+    .get-in-toch{
+        width: 30vw;
+        height: 40vh;
+}
+    
+}
+
+@media(max-width:480px){
+    
+    .textoComplemento{
+        display: none;
+    }
+    .textoLink{
+        cursor: pointer;
+    }
+    .textoInteiro:hover .textoComplemento{
+        display: block;
+        color: #00bac6;        
+    }
+    .populr-post,
+    .tags,
+    .aLittleAbout{
+        width: 70vw;
+        height: 20vh;
+}
+    .get-in-toch{
+        width: 70vw;
+        height: 35vh;
+    
+
+}
+}

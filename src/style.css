@@ -1,0 +1,464 @@
+body{
+    width: 100vw;
+    height: auto;    
+}
+.header-1, .footer-1{
+    width: 100vw;
+    height: 6vh;
+    background-color: black;
+}
+.conteudo-header-1, .conteudo-footer-1{
+    position: relative;
+    width: 68vw;
+    height: 6vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+}
+.logo2{
+    position: absolute;
+    display: none;
+}
+.logo:hover + .logo2{
+    display: block;
+}
+.logo2:hover{
+    display: block;
+}
+.redes-sociais{
+    display: flex;
+    gap: 12px;
+    filter: invert(1);       
+}
+.redes-sociais img{
+    width: 20px;
+    transition: .3s ease-in-out;
+}
+.redes-sociais img:hover{
+    transform: scale(1.2);
+    filter: opacity(0.8) drop-shadow(0 0 0 #e60303)
+}
+.header-2{
+    width: 100vw;
+    height: 8vh;
+    background-color: #ffffff;
+    border-bottom: 5px solid #cacaca;    
+}
+.conteudo-header-2{
+    width: 68vw;
+    height: 8vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+}
+button.menuDropDown{
+    background-color: transparent;
+    border: transparent;
+}
+.conteudo-header-2 .menu{
+    display: flex;
+    gap: 12px;
+}
+.conteudo-header-2 .menu a{
+    position: relative;
+}
+.conteudo-header-2 .menu a{
+    transition: 0.3s ease-in-out;
+}
+.conteudo-header-2 .menu a:hover{
+    color: #00bac6;
+    padding-bottom: 2.5vh;
+    border-bottom: 4px solid #00bac6;
+}
+.conteudo-header-2 .menuDropDown img{
+    width: 25px;
+    cursor: pointer;
+}
+.conteudo-header-2 a{
+    font-size: 12px;
+    color: #757575; 
+}
+.conteudo-header-2 .search input{
+    display: flex;
+    width: 180px;
+    height: 30px;
+    border: 2px solid #cacaca;
+    border-radius: 5px ;   
+    background-image: url(./img/Lupa\ Search.png);
+    background-repeat: no-repeat;
+    background-position: right;          
+}
+/* SLIDES */
+.conteudo-slide{
+    width: 100vw;
+    position: relative;    
+}
+.conteudo-slide img{
+    width: 100vw;
+    min-height: 30vh;        
+}
+button.slick-prev{
+    position: absolute;
+    z-index: 9;
+    width: 2.5vw;
+    height: 5.2vh;
+    font-size: 0;
+    border: transparent;
+    background-color: transparent;
+    background-image: url(./img/arrow.png);
+    background-repeat: no-repeat;
+    top: 40%;
+    left: 12vw;
+    cursor: pointer;
+}
+button.slick-next{
+    position: absolute;
+    z-index: 9;
+    width: 2.5vw;
+    height: 5.2vh;
+    font-size: 0;
+    border: transparent;
+    background-color: transparent;
+    background-image: url(./img/arrow.png);
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    top: 40%;
+    right: 12vw;
+    cursor: pointer;    
+}
+ul.slick-dots{
+    position: absolute;
+    display: flex !important;    
+    gap: 2vw;
+    bottom: 2vh;
+    left: 43vw;    
+}
+ul.slick-dots button{
+    display: flex;
+    font-size: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+ul.slick-dots li.slick-active{
+    height: 15px;
+    border-radius: 50%;        
+    background-color: #00bac6;
+}
+.conteudo-slide div.conteudo-texto{
+    position: absolute;
+    display: flex;
+    flex-direction: column;    
+    width: 68vw;
+    min-height: 20vh;
+    top: 3vh;    
+    gap: 2vh;
+    margin-left: 16vw;
+    line-height: 3vh;
+    color: #ffffff;    
+}
+.conteudo-slide .conteudo-texto h3{    
+    font-weight: 200;
+}
+.conteudo-slide .conteudo-texto p{    
+    font-weight: 50;
+    color: #00bac6;
+    text-align: center;
+}
+p span{
+    color: #00bac6;
+}
+/* iMacPencilPhoto */
+.imacPencilPhoto{     
+    width: 100vw; 
+    min-height: 50vh; 
+}
+.imacPencilPhoto-conteudo{
+    position: relative;    
+    width: 68vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+.textoIPP{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+    text-align: center;          
+}
+.textoIPP h3{    
+    color: #757575; 
+    font-weight: 200;     
+}
+span{
+    color: #000000;
+}
+.textoIPP p{
+    display: flex; 
+    color: #757575;   
+}
+.linkImacPencilPhoto{
+    position: relative;
+    width: 68vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.linkImacPencilPhoto h3{
+    font-weight: 200;
+    font-size: 14px;
+    text-align: justify;
+}
+.linkImacPencilPhoto p{
+    font-size: 12px;
+    text-align: justify;
+} 
+.imac-content,
+.pencilWithPaper-content,
+.photo-content{
+    width: 180px;
+    height: 260px;
+    display: flex;
+    flex-direction: column; 
+    text-align: justify;
+    align-items: center; 
+    justify-content: center;
+    color: #757575;
+    margin: 0 auto;
+    gap: 20px;      
+}
+.pencilWithPaper-content{
+    padding-top: 4vh;
+}
+.imac-content img,
+.pencilWithPaper-content img,
+.photo-content img{
+    width: 10vw;
+    filter: opacity(.4);    
+    transition: 0.3s ease-in-out;   
+}
+.imac-content img:hover{
+    transform: scale(1.1);
+    filter: opacity(0.4) drop-shadow(0 0 0 #01d5e4);
+}
+.pencilWithPaper-content img:hover{
+    transform: scale(1.1);
+    filter: opacity(0.4) drop-shadow(0 0 0 #01d5e4);
+}
+.photo-content img:hover{
+    transform: scale(1.1);
+    filter: opacity(0.4) drop-shadow(0 0 0 #01d5e4);
+}
+
+/* Casacor */
+.casacor{    
+    width: 100vw; 
+    height: auto;
+    background-color: #eeeeee;    
+}
+.casacor::before{    
+    width: 100vw;
+    height: 6.2vh;
+    content: "";
+    background-color: #ffffff;
+    display: flex;    
+    background-image: url(./img/Shape\ 3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+}
+div.casacor-conteudo{ 
+    display: flex; 
+    flex-direction: column;
+    width: 68vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5vh;
+    color: #757575;
+    justify-content: space-between; 
+    padding-top: 5vh;
+    gap: 3vh;
+}
+div.casacor-conteudo .img-2{
+    display: flex;
+    flex-direction: column;
+    width: 68vw;
+    height: 10vh;
+    margin: 0 auto;
+    gap: 2vh;
+    align-items: center;
+}
+div.ponteAmsterda{
+    width: 68vw;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;  
+}
+div.casacor-conteudo h2{
+    font-weight: 200;
+    font-size: 16px;
+}
+div.casacor-conteudo p{
+    font-size: 12px;    
+}
+div.casacor-conteudo .img-1{
+    width: 182px;
+    height: 260px;
+    display: flex;
+    flex-direction: column; 
+    text-align: justify; 
+    gap: 20px;    
+}
+div.casacor-conteudo img{
+    display: flex;
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #757575;     
+}
+
+/* Patrocinio */
+
+.patrocinio{
+    width: 100vw; 
+    height: auto;
+    background-color: #ffffff; 
+}
+.patrocinio-conteudo{
+    display: flex;    
+    width: 68vw;
+    height: auto;
+    margin: 0 auto;
+    gap: 2vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.p-img{
+    width: 150px;
+    height: 70px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+    
+}
+.p-img img{
+    width: 100px;
+    height: auto;
+    transition: .3s ease-in-out;      
+}
+.p-img img:hover{
+    transform: scale(1.1);
+    filter: blur(0px) brightness(100%) contrast(100%) drop-shadow(3px 3px 1px #00fffb) grayscale(0%) hue-rotate(360deg) invert(0%) opacity(100%) saturate(100%) sepia(0%) ;
+}
+
+/* Social */
+.social{
+    width: 100vw; 
+    height: auto;       
+    background-color: #4d4e4f;
+}
+.social-cont{
+    width: 68vw;
+    height: auto;
+    display: flex;
+    margin: 0 auto;    
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;     
+}
+.social-text{     
+    display: flex !important; 
+    flex-wrap: wrap;         
+    color:#757575;
+    font-size: 12px; 
+    gap: 2vw;   
+}
+.populr-post,
+.tags,
+.aLittleAbout,
+.get-in-toch{
+    width: 14vw;
+    height: 40vh;    
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;    
+    padding-top: 2vh;  
+    
+}
+h3.title-populr-post,
+h3.title-tags,
+h3.title-aboutUs,
+h3.title-getInTouch
+{
+    display: flex !important;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 2vh;
+}
+.populr-post p,
+.title-tags p,
+.title-aboutUs p,
+.get-in-toch p{
+    display: flex !important;
+    flex-direction: column;
+    margin: 12px 15px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.local, .email, .tel{
+    display: flex;
+    width: 120px;
+    height: 20px;
+    margin-bottom: 12px;
+    
+}
+.local a, .email a, .tel a{
+    color:#757575;
+}
+.local img, .email img, .tel img{ 
+    width: 15px;
+    transition: .3s ease-in-out;    
+}
+.local img:hover{
+    transform: scale(1.1);
+    filter: blur(0px) brightness(100%) contrast(100%) drop-shadow(3px 3px 1px #00fffb) grayscale(0%) hue-rotate(360deg) invert(0%) opacity(100%) saturate(100%) sepia(0%) ;
+}
+.email img:hover{
+    transform: scale(1.1);
+    filter: blur(0px) brightness(100%) contrast(100%) drop-shadow(3px 3px 1px #00fffb) grayscale(0%) hue-rotate(360deg) invert(0%) opacity(100%) saturate(100%) sepia(0%) ;
+}
+.tel img:hover{
+    transform: scale(1.1);
+    filter: blur(0px) brightness(100%) contrast(100%) drop-shadow(3px 3px 1px #00fffb) grayscale(0%) hue-rotate(360deg) invert(0%) opacity(100%) saturate(100%) sepia(0%) ;
+}
+.footer-1{
+    width: 100vw;
+    height: 6vh;
+    background-color: #29291e;
+}
+.copyright{
+    color:#757575;
+}
+
+
+
+
+
+
+
